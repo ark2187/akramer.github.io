@@ -1,10 +1,97 @@
 ---
-title: "Amanda Kramer's website"
+title: "Amanda Kramer"
 output: 
   html_document:
     toc: true
     toc_float: true
     theme: yeti
 ---
+
+# EDUCATION
+
+**Columbia University Mailman School of Public Health | New York, NY | 2020**
+
+Masters in Public Health, Population and Family Health, Certificate in Applied Biostatistics
+
+**Villanova University | Villanova, PA | 2015**
+
+Bachelor of Science: Biochemistry 	
+
+
+# PROFESSIONAL EXPERIENCE
+
+**The Vaid Group, Justice Work| New York, New York | Current**
+
+*Outreach and Education Specialist*
+
+* Create fact sheets for LGBTQ+ womxn in poverty based on current research
+
+* Perform literature reviews on health outcomes for LGBTQ+ womxn 
+
+* Curate information for social media accounts to perform outreach and increase recruitment for the LGBTQ+ Womxn Survey 
+
+**Columbia University Medical Center | New York, New York | 2016-2020**
+
+*Senior Clinical Research Coordinator, Pulmonary Medicine*
+
+* Manage data, clinical protocols, and patient care for over 50 Pharmaceutical and NIH funded trials
+
+* Executed 2 successful FDA Audits regarding clinical trials submitted for a New Drug Approval
+
+*	Create data capture forms and performed data analyses through EDCs
+
+*	Execute analysis of categorical data utilizing a large patient registry
+
+*	Brought 4 drugs from Phase 2a to FDA approval with over 30 patients per trial
+
+*	Proficient in all regulatory requirements, including FDA, NIH, local or central IRBs, GCP and ICH
+
+*	Ran a Phase 1/2 pilot study as a single center, New Drug IND 
+
+*	Compute various statistical analysis using PHI to improve health outcomes
+
+*	Manage NIH Grant and all corresponding paperwork required
+
+*	Assist in the clinic with patient care, including spirometry, patient triage, and blood work
+
+
+**Northwell Health | New Hyde Park, NY | 2015-2016**
+
+*Assistant Clinical Research Coordinator, Hemophilia Department*
+
+*	Managed clinical information in 14 pediatric Hemophilia clinical research studies
+
+*	Handled queries and data management of various pediatric and adult studies
+
+*	Organized and analyzed the patient database registry for Hemophilia
+
+*	Cleaned and merged databases to ensure high levels of data quality prior to analysis 
+
+**Johnson & Johnson, Janssen Pharmaceutical | Spring House, PA | 2014**
+
+*Research and Development Intern, Immunology Department*
+
+*	Designed, assayed, analyzed and presented a research project over a twelve-week period
+
+*	Collaborated in group meetings to progress research in the Nrf2/KEAP1 Discovery Project
+
+*	Analyzed gene and protein expression of different analytes in human macrophages
+
+**The Feinstein Institute for Medical Research | Manhasset, NY | 2012**
+
+*Research Assistant, Clinical Research Services Department*	
+
+*	Coordinated with Research Nurse to provide care and comfort to pediatric patients
+
+*	Operated with geneticists in research on investigational product drug trials
+
+**Nature’s Value | Coram, NY | 2010-2012**
+
+*Laboratory Chemist, Microbiologist and Technician*	
+
+*	Evaluated various quality assurance tests daily
+
+*	Analyzed qualitative data of microorganisms in diverse culture mediums
+
 
 

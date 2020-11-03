@@ -1,5 +1,5 @@
 ---
-title: "Amanda Kramer's website"
+title: "Amanda Kramer"
 output: 
   html_document:
     toc: true
@@ -7,3 +7,9 @@ output:
     theme: yeti
 ---
 
+*I love anime. I started with one piece...*
+
+<img src="images/op.jpg" style="width:75%">
+
+*and now love binging Hunter x Hunter*
+<img src="images/hxh.jpg" style="width:75%">
