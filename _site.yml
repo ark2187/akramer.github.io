@@ -1,15 +1,16 @@
-name: "Yay internet!""
+name: "Yay internet!"
 output_dir: "."
 navbar:
   title: "Home"
   right:
-    - text: "About Me"
+    - text: "About"
       href: about.html
+    - text: "Dashboard"
+      href: dashboard.html
     - icon: fa-envelope fa-lg
       href: mailto:<ark2187@cumc.columbia.edu>
     - icon: fa-github fa-lg
-      href: https://github.com/ark2187
+      href: http://github.com/ark2187/
 output:
   html_document:
-    theme: cerulean
-    
+    theme: yeti

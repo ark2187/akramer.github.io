@@ -13,4 +13,4 @@ RnwWeave: Sweave
 LaTeX: pdfLaTeX
 
 BuildType: Website
-WebsitePath: ~/akramer.github.io
+WebsitePath: ~/ark2187.github.io

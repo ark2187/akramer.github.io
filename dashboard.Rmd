@@ -1,0 +1,32 @@
+---
+title: "Dashboard"
+output: 
+  flexdashboard::flex_dashboard:
+    orientation: columns
+    vertical_layout: fill
+---
+
+```{r setup, message = FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(flexdashboard)
+library(tidyverse)
+library(p8105.datasets)
+library(plotly)
+library(patchwork)
+data(instacart)
+insta_small = instacart %>% 
+  sample_n(500000) %>%
+  mutate(order_dow = recode(order_dow, 
+       "1"="Sunday",
+       "2"="Monday",
+       "3"="Tuesday",
+       "4"="Wednesday",
+       "5"="Thursday",
+       "6"="Friday",
+       "0"="Saturday"), 
+       order_dow = as.factor(order_dow)) %>%
+  mutate(order_dow = ordered(order_dow, levels = c("Saturday", "Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday")))
+```
+
+
+
