@@ -7,9 +7,6 @@ output:
     theme: yeti
 ---
 
-*I love anime. I started with one piece...*
+*Public Health Professional with a background in pulmonary clinical trials.*
 
-<img src="images/op.jpg" style="width:75%">
-
-*and now love binging Hunter x Hunter*
-<img src="images/hxh.jpg" style="width:75%">
+<img src="images/AK.jpg" style="width:75%">

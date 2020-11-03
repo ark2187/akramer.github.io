@@ -9,6 +9,8 @@ navbar:
       href: dashboard.html
     - icon: fa-envelope fa-lg
       href: mailto:<ark2187@cumc.columbia.edu>
+    - icon: fab fa-linkedin
+      href: https://www.linkedin.com/in/amanda-kramer-mph-234a5aa2/ 
     - icon: fa-github fa-lg
       href: http://github.com/ark2187/
 output:
