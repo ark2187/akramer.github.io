@@ -1,7 +1,8 @@
 ---
-title: "Central Park Weather Dashboard"
+title: "NY Weather Dashboard"
 output:  
   flexdashboard::flex_dashboard:
+    theme: yeti
     orientation: columns
     vertical_layout: fill
 ---
@@ -18,41 +19,46 @@ data("ny_noaa")
 ny_noaa = 
   ny_noaa %>%
   sample_n(5000) %>%
-  separate(date, into = c("year", "month", "day"), convert = TRUE) %>% 
+  separate(date, into = c("year", "month", "day"), convert = TRUE) %>%
   mutate(
     tmax = as.numeric(tmax),
     tmin = as.numeric(tmin),
     snow_mm = snow,
     snow = round(snow_mm * 0.03937 * 4) / 4)
+
 ```
 
  
 Column {data-width=650}
 -----------------------------------------------------------------------
 
-### Snow and 
+### Snowfall by year
 
 ```{r}
   ny_noaa %>% 
   mutate(text_label = str_c("Snow (mm)")) %>% 
   plot_ly(
-    x = ~month, y = ~tmin, type = "box", 
+    x = ~year, y = ~snow, color = ~snow, type = "bar", colors = "viridis", 
     text = ~text_label, alpha = 0.4)
 ```
 
 Column {data-width=350}
 -----------------------------------------------------------------------
 
-### Minimum temperature, Central Park
+### Temperature trends by month
 
 ```{r}
  ny_noaa %>% 
-  plot_ly(x = ~month, y = ~tmin, color = ~snow, type = "scatter", mode = "lines", fill = "tozeroy")
+    mutate(text_label = str_c("month", month)) %>% 
+  plot_ly(x = ~tmin, y = ~tmax, color = ~month, type = "scatter", mode = "markers", alpha = 0.5, text = ~text_label)
 ```
 
-### Minimum temperature distribution, by site
+### Average daily temperatures in January, by site
 
-```{r}
+```{r, echo=FALSE}
   ny_noaa %>% 
-  plot_ly(x = ~month, y = ~tmin, color = ~month, type = "box")
+  plot_ly(x= ~month,
+     y = ~snow, type = "box", color = ~month)
+
+```
 ```
