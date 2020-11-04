@@ -53,12 +53,14 @@ Column {data-width=350}
   plot_ly(x = ~tmin, y = ~tmax, color = ~month, type = "scatter", mode = "markers", alpha = 0.5, text = ~text_label)
 ```
 
-### Average daily temperatures in January, by site
+### Distribution of temperatures in January
 
 ```{r, echo=FALSE}
   ny_noaa %>% 
-  plot_ly(x= ~month,
-     y = ~snow, type = "box", color = ~month)
+  mutate(text_label = str_c("day")) %>% 
+  filter(month == 1) %>%
+  plot_ly(x= ~day,
+     y = ~tmin, type = "box", color = ~day)
 
 ```
 ```
