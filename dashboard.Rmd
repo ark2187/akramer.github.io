@@ -57,23 +57,9 @@ Column {data-width=350}
 
 ```{r, echo=FALSE}
   ny_noaa %>% 
-<<<<<<< HEAD
   mutate(day = as.factor(day),
          day = fct_reorder(day, tmin)) %>% 
   filter(month == 1) %>%
   plot_ly(
      y = ~tmin, color = ~day, type = "box", colors = "viridis")
-
-
-nyc_airbnb %>% 
-  mutate(neighbourhood = fct_reorder(neighbourhood, price)) %>% 
-  plot_ly(y = ~price, color = ~neighbourhood, type = "box", colors = "viridis")
-=======
-  mutate(text_label = str_c("day")) %>% 
-  filter(month == 1) %>%
-  plot_ly(x= ~day,
-     y = ~tmin, type = "box", color = ~day)
->>>>>>> b30203818e346814e799913d459660622dc89502
-
-```
 ```
